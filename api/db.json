@@ -65,7 +65,14 @@
       "emoji": "🐠",
       "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_fishes.jpg",
       "path": "/photos/fishes"
-    }
+    },
+    {
+        "id": 66,
+        "name": "fishes duplicate",
+        "emoji": "🐠",
+        "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_fishes.jpg",
+        "path": "/photos/fishes" 
+      }
   ],
   "photos": [
     {

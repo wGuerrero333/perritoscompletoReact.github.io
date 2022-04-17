@@ -1,7 +1,7 @@
 const db = require('../adapter')
 
-function find ({id, favs = []}) {
-  const photo = db.get('photos').find({id: +id}).value()
+function find ({ id, favs = [] }) {
+  const photo = db.get('photos').find({ id: +id }).value()
   return {
     ...photo,
     liked: favs.includes(id.toString())
@@ -9,7 +9,7 @@ function find ({id, favs = []}) {
 }
 
 function addLike ({ id }) {
-  return db.get('photos').find({id: +id}).update('likes', likes => likes + 1).write()
+  return db.get('photos').find({ id: +id }).update('likes', likes => likes + 1).write()
 }
 
 function removeLike ({ id }) {
